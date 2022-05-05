@@ -1,0 +1,163 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  <title>Fragrance Finder</title>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class = "header">
+    <nav>
+      <a href = "index.html"><img src = "images/FragranceFinderLogo.png"></a>
+      <div class = "nav-links" id = "navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li> <a href = "index.html">HOME</a> </li>
+          <li> <a href = "">ABOUT</a> </li>
+          <li> <a href = "scan.html">SCAN</a> </li>
+          <li> <a href = "catalogue.html">CATALOGUE</a> </li>
+          <li> <a href = "">HOW TO</a> </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class = "text-box">
+      <h1>Fragrance Finder</h1>
+      <p>This is an image recognition algorithm created using Google's teachable machine,<br> Which allows the user to detect a certain perfume which is then classified by the program</p>
+      <a href = "" class = "hero-btn">Head over to the HOW TO page</a>
+
+    </div>
+  </section>
+
+<!-------- Choose Us -------->
+
+<section class="chooseUs">
+
+  <h1>Why Choose Us</h1>
+  <p>We provide a very unique and distinguished shopping experience that ensures optimal customer satisfaction</p>
+
+  <div class="row">
+    <div class="chooseUs-col">
+      <h3>Privacy</h3>
+      <p>When you walk into one of our stores, you will be greeted with nothing but products. Test them, and proceed to purchase without any human contact</p>
+    </div>
+    <div class="chooseUs-col">
+      <h3>Automation</h3>
+      <p>Our stores will offer a fully automated system where you find the product you would like to purchase yourself without being assisted unless needed</p>
+    </div>
+    <div class="chooseUs-col">
+      <h3>Confidence</h3>
+      <p>You will feel confident after shopping at one of our outlets without trying to be persuaded to purchase a product by anyone, leaving you with a feeling of satisfaction</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="mission">
+
+  <h1>Our Mission Statement</h1>
+  <p>We aim to provide all customers with a new and unique experience within the niche fragrance market</p>
+
+  <div class="row">
+    <div class="mission-col">
+      <img src="images/smellitt.jpeg">
+      <div class="layer">
+        <h3>Smell It</h3>
+      </div>
+    </div>
+    <div class="mission-col">
+      <img src="images/scanitt.jpeg">
+      <div class="layer">
+        <h3>Scan It</h3>
+      </div>
+    </div>
+    <div class="mission-col">
+      <img src="images/buyitt.jpeg">
+      <div class="layer">
+        <h3>Buy It</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<! -------- Testimonials --------->
+
+<section class="testimonials">
+  <h1>What Our Potential Customers Think</h1>
+  <p>A few words from some of our potential customers on their thoughts of the business</p>
+
+  <div class="row">
+    <div class="testimonail-col">
+      <img src="images/user1.png">
+      <div>
+        <p>Placeholder text</p>
+        <h3>Sam J. Hill</h3>
+        <i class="fa fa-solid fa-star"></i>
+        <i class="fa fa-solid fa-star"></i>
+        <i class="fa fa-solid fa-star"></i>
+        <i class="fa fa-solid fa-star"></i>
+        <i class="fa fa-solid fa-star-half-stroke"></i>
+      </div>
+    </div>
+    <div class="testimonail-col">
+      <img src="images/user1.png">
+      <div>
+        <p>Placeholder text</p>
+        <h3>Muhammad Musa</h3>
+        <i class="fa fa-solid fa-star"></i>
+        <i class="fa fa-solid fa-star"></i>
+        <i class="fa fa-solid fa-star"></i>
+        <i class="fa fa-solid fa-star"></i>
+        <i class="fa fa-solid fa-star"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<! --------- Contact Us ----------->
+
+<section class="contact">
+  <h1>We Are Very Excited To Be Working On This Project</h1>
+  <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<! ---------- Footer ---------- >
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Place holder text</p>
+
+  <div class="icons">
+    <i class="fa fa-brands fa-facebook"></i>
+    <i class="fa fa-brands fa-twitter"></i>
+    <i class="fa fa-brands fa-instagram"></i>
+    <i class="fa fa-brands fa-linkedin-in"></i>
+  </div>
+</section>
+
+
+<!--------- JavaScript for toggling menu icons on smaller devices ---------->
+<script>
+
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+
+</body>
+</html>

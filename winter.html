@@ -1,0 +1,87 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  <title>Fragrance Finder</title>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class = "sub-header">
+    <nav>
+      <a href = "index.html"><img src = "images/FragranceFinderLogo.png"></a>
+      <div class = "nav-links" id = "navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li> <a href = "index.html">HOME</a> </li>
+          <li> <a href = "">ABOUT</a> </li>
+          <li> <a href = "scan.html">SCAN</a> </li>
+          <li> <a href = "catalogue.html">CATALOGUE</a> </li>
+          <li> <a href = "">HOW TO</a> </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>WINTER SCENTS</h1>
+  </section>
+
+<! -------- Gallery -------- >
+
+<section class = "gallery">
+  <div class = "image-grid">
+    <img src = "images/SBE.jpeg">
+    <img src = "images/LNDL.jpeg">
+    <img src = "images/TFNE.jpeg">
+    <img src = "images/PLI.jpeg">
+    <img src = "images/ACA.jpeg">
+    <img src = "images/LMLP.jpeg">
+    <img src = "images/XN.jpeg">
+    <img src = "images/CHMP.jpeg">
+  </div>
+</section>
+
+<section class = = "gallery text">
+</section>
+
+
+
+
+
+<! ---------- Footer ---------- >
+
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Place holder text</p>
+
+  <div class="icons">
+    <i class="fa fa-brands fa-facebook"></i>
+    <i class="fa fa-brands fa-twitter"></i>
+    <i class="fa fa-brands fa-instagram"></i>
+    <i class="fa fa-brands fa-linkedin-in"></i>
+  </div>
+</section>
+
+
+<!--------- JavaScript for toggling menu icons on smaller devices ---------->
+<script>
+
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+
+</body>
+</html>
